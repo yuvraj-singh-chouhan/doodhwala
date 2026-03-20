@@ -62,7 +62,7 @@ function WhyChooseUs() {
     return (
         <div className="w-full bg-white relative pb-10 pt-16">
             <div className="container mx-auto px-6 md:px-12 lg:px-[100px]">
-                
+
                 {/* Header Section */}
                 <div className="mb-14 text-left">
                     <h1 className="font-[Ruksha] text-[40px] md:text-[50px] lg:text-[65px] text-[#494949] uppercase leading-none tracking-wide mb-3 md:mb-5 drop-shadow-sm">
@@ -80,10 +80,10 @@ function WhyChooseUs() {
                 <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 xl:gap-20 mb-20 lg:mb-28 items-center lg:items-stretch">
                     {/* Placeholder Image */}
                     <div className="w-full lg:w-[45%] aspect-square lg:aspect-[4/3.2] bg-[#EAEAEA] rounded-[24px] shadow-inner flex items-center justify-center relative overflow-hidden group flex-shrink-0">
-                        <img 
-                            src="https://images.unsplash.com/photo-1594833246815-b73373bc0bda?q=80&w=800&auto=format&fit=crop" 
-                            alt="Fresh Dairy Farms" 
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                        <img
+                            src="WCU/why-choose-us.png"
+                            alt="Fresh Dairy Farms"
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                     </div>
 
@@ -107,7 +107,7 @@ function WhyChooseUs() {
             <div className="w-full relative z-20 mt-4 bg-white">
                 <Subscription />
             </div>
-            
+
         </div>
     );
 }

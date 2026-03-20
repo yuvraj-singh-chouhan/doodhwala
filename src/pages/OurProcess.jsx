@@ -5,32 +5,32 @@ function OurProcess() {
         {
             title: "Hygienic Milking Process",
             description: "We take special care of the cows and buffaloes at our partner local farms. The entire milking process is done manually in a traditional, stress-free environment while maintaining the highest hygiene standards. This ensures the milk retains its natural purity and absolute goodness.",
-            img: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=600&auto=format&fit=crop"
+            img: "DPpage/dp1.png"
         },
         {
             title: "Safe & Chilled Transportation",
             description: "To lock in the freshness right from the farm, the milk is immediately transferred to a chilled environment. Through our strict “Cold Chain” process, the milk is safely and rapidly transported to our processing plant, preventing any bacterial growth along the way.",
-            img: "https://images.unsplash.com/photo-1601569426909-b69578dd01c4?q=80&w=600&auto=format&fit=crop"
+            img: "DPpage/dp2.png"
         },
         {
             title: "Strict Adulteration Testing",
             description: "As soon as the milk arrives at our plant, every single batch undergoes rigorous quality checks in our In-House lab. We deeply test for water, harmful chemicals, or preservatives. Only when the milk is proven to be 100% pure does it move forward to the next stage",
-            img: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=600&auto=format&fit=crop"
+            img: "DPpage/dp3.png"
         },
         {
             title: "Gentle Milk Pasteurisation",
             description: "The milk is scientifically pasteurised at a specific temperature. This essential step completely eliminates any harmful bacteria while perfectly preserving the vital nutrients, calcium, and rich natural taste—making it completely safe and healthy for your family.",
-            img: "https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=600&auto=format&fit=crop"
+            img: "DPpage/dp4.png"
         },
         {
             title: "Eco-Friendly Bottle Packing",
             description: "We say a strict NO to harmful plastic packets. The milk is securely packed in premium, reusable glass bottles. Before filling, every single bottle is thoroughly washed and sterilized with RO water using high-tech machinery to ensure ultra-hygienic packaging.",
-            img: "https://images.unsplash.com/photo-1563636619-e9143da7973b?q=80&w=600&auto=format&fit=crop"
+            img: "DPpage/dp5.png"
         },
         {
             title: "Free Morning Home Delivery",
             description: "Once securely packed, our dedicated delivery team springs into action. Your fresh, chilled milk is delivered straight to your doorstep every morning with absolutely zero delivery charges, giving your day the healthiest start possible!",
-            img: "https://images.unsplash.com/photo-1594833246815-b73373bc0bda?q=80&w=600&auto=format&fit=crop"
+            img: "DPpage/dp6.png"
         }
     ];
 
@@ -59,7 +59,7 @@ function OurProcess() {
                         return (
                             <div
                                 key={index}
-                                className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-8 md:gap-12 lg:gap-24 lg:my-[-10px]`}
+                                className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-8 md:gap-12 lg:gap-24 lg:my-[20px]`}
                             >
                                 {/* Image Placeholder */}
                                 <div className="w-[100%] max-w-[380px] aspect-square bg-[#D9D9D9] rounded-[16px] flex items-center justify-center flex-shrink-0 z-10 shadow-sm relative overflow-hidden group">
@@ -73,11 +73,11 @@ function OurProcess() {
                                 </div>
 
                                 {/* Text Content */}
-                                <div className={`flex flex-col max-w-[500px] ${isEven ? 'lg:pr-8' : 'lg:pl-8'} text-center lg:text-left z-10`}>
-                                    <h3 className="font-poppins text-[22px] md:text-[26px] font-bold text-[#45628A] mb-3 md:mb-4">
+                                <div className={`flex flex-col max-w-[700px] ${isEven ? 'lg:pr-8' : 'lg:pl-8'} text-center lg:text-left z-10`}>
+                                    <h3 className="font-poppins text-[22px] md:text-2xl font-bold text-[#45628A] mb-3 md:mb-4 font-semibold">
                                         {step.title}
                                     </h3>
-                                    <p className="font-poppins text-[15px] md:text-[17px] text-[#7A848D] leading-[1.65]">
+                                    <p className="font-poppins text-[15px] md:text-lg text-[#7A848D] leading-[1.65]">
                                         {step.description}
                                     </p>
                                 </div>
