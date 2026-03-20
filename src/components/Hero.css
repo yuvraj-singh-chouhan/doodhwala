@@ -1,0 +1,3 @@
+.wave-bottom {
+    clip-path: path("M0,0 H100% V80% Q75% 100% 50% 80% T0 80% Z");
+}
