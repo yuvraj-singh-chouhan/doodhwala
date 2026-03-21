@@ -73,11 +73,11 @@ function OurProcess() {
                                 </div>
 
                                 {/* Text Content */}
-                                <div className={`flex flex-col max-w-[700px] ${isEven ? 'lg:pr-8' : 'lg:pl-8'} text-center lg:text-left z-10`}>
-                                    <h3 className="font-poppins text-[22px] md:text-2xl font-bold text-[#45628A] mb-3 md:mb-4 font-semibold">
+                                <div className={`flex flex-col max-w-[700px] ${isEven ? 'lg:pr-8' : 'lg:pl-8'} lg:text-left z-10`}>
+                                    <h3 className="font-poppins text-[30px] md:text-[30px] font-bold text-[#45628A] mb-3 md:mb-4 font-semibold">
                                         {step.title}
                                     </h3>
-                                    <p className="font-poppins text-[15px] md:text-lg text-[#7A848D] leading-[1.65]">
+                                    <p className="font-poppins text-[24px] md:text-[26px] text-[#7A848D] leading-[1.65]">
                                         {step.description}
                                     </p>
                                 </div>
@@ -86,9 +86,9 @@ function OurProcess() {
                     })}
                 </div>
             </div>
-            <section className="w-full my-20 bg-[#5A779D] flex flex-col md:flex-row mt-0 mb-[-10px]">
+            <section className="w-full my-20 bg-[#5A779D] flex flex-col md:flex-row mt-0 mb-12">
                 {/* Left Curved Image */}
-                <div className="w-full md:w-[40%] lg:w-[35%] xl:w-[40%] h-[280px] md:h-auto min-h-[350px] lg:min-h-[420px] rounded-b-full md:rounded-b-none md:rounded-r-[350px] overflow-hidden flex-shrink-0 relative bg-white md:bg-transparent shadow-[10px_0_20px_rgba(0,0,0,0.1)]">
+                <div className="w-full md:w-[40%] lg:w-[35%] xl:w-[40%] h-[280px] md:h-auto min-h-[350px] lg:min-h-[420px] rounded-b-full md:rounded-b-none md:rounded-r-[350px] md:rounded-br-[350px] overflow-hidden flex-shrink-0 relative bg-white md:bg-transparent shadow-[10px_0_20px_rgba(0,0,0,0.1)]">
                     <img
                         src="/ourprocess/bannerimg.png"
                         alt="Mother and Child Drinking Milk"
@@ -97,17 +97,17 @@ function OurProcess() {
                 </div>
 
                 {/* Text Content Area */}
-                <div className="w-full md:w-[60%] lg:w-[65%] xl:w-[60%] flex flex-col items-center justify-center py-16 md:py-20 px-6 md:px-10 lg:px-16 text-center text-white z-10">
-                    <h2 className="font-[Ruksha] text-[32px] md:text-[45px] lg:text-[52px] xl:text-[60px] uppercase leading-tight md:leading-[1.05] tracking-wide mb-4 md:mb-5 drop-shadow-sm">
+                <div className="w-full md:w-[60%] lg:w-[65%] xl:w-[60%] flex flex-col items-center justify-center py-16 md:py-20 px-6 md:px-10 lg:px-16 md:text-center text-white z-10">
+                    <h2 className="font-[Ruksha] text-[38px] md:text-[45px] lg:text-[52px] xl:text-[60px] uppercase leading-tight md:leading-[1.05] tracking-wide mb-4 md:mb-5 drop-shadow-sm">
                         EFFORTLESS MORNINGS, <br className="hidden lg:block" /> FREE FRESHNESS.
                     </h2>
 
-                    <p className="font-poppins text-[14px] md:text-[16px] lg:text-[18px] opacity-95 leading-[1.6] md:leading-relaxed max-w-[750px] mb-8 md:mb-10 font-light">
+                    <p className="font-poppins text-[20px] md:text-[16px] lg:text-[18px] opacity-95 leading-[1.6] md:leading-relaxed max-w-[750px] mb-8 md:mb-10 font-light">
                         Skip the market and last-minute runs. Get 100% farm-fresh, pasteurized milk in eco-friendly glass bottles, delivered straight to your doorstep—at zero extra cost. Flexible morning slots (6am-10am) available.
                     </p>
 
-                    <button className="bg-white text-[#5A779D] px-8 md:px-10 py-3.5 md:py-4 rounded-full font-bold font-poppins text-[14px] md:text-[16px] uppercase tracking-wide shadow-lg hover:bg-gray-50 hover:scale-105 transition-all">
-                        Start Your Free Morning Delivery
+                    <button className="bg-white text-[#5A779D] px-12 md:px-10 py-5 md:py-4 rounded-full font-bold font-poppins text-[18px] md:text-[16px] uppercase tracking-wide shadow-lg hover:bg-gray-50 hover:scale-105 transition-all">
+                        Start Free Delivery
                     </button>
                 </div>
             </section>

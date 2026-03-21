@@ -49,16 +49,16 @@ function Hero() {
                 <div className="container mx-auto px-4 md:px-6 relative z-10 md:text-center flex flex-col items-center">
 
                     {/* Typographic Headings */}
-                    <h1 className="font-[Ruksha] text-[42px] md:text-[60px] lg:text-[75px] leading-[1.05] text-white uppercase mb-4 tracking-wide max-w-[1050px] drop-shadow-sm px-2">
+                    <h1 className="font-[Ruksha] text-[38px] md:text-[40px] lg:text-[75px] leading-[1.05] text-white uppercase mb-4 md:tracking-wide max-w-[1050px] drop-shadow-sm px-2">
                         ENJOY NATURE IN <br className="lg:hidden" /> ITS PUREST FORM.
                     </h1>
 
-                    <p className="font-poppins text-[15px] md:text-[17px] lg:text-[18px] text-white max-w-[820px] leading-[1.6] mb-8 font-light drop-shadow-sm px-2 opacity-95">
+                    <p className="font-poppins text-[20px] md:text-[20px] lg:text-[20px] text-white max-w-[820px] leading-[1.6] mb-8 font-light drop-shadow-sm px-2 opacity-95">
                         Premium Quality, 100% Pure Pasteurised Cow & Buffalo Milk. Delivered fresh from our local farmers directly to your doorstep in reusable glass bottles.
                     </p>
 
                     {/* Feature Quality Metrics */}
-                    <div className="flex flex-wrap justify-center gap-x-6 md:gap-x-10 gap-y-[12px] font-poppins text-[16px] md:text-[18px] text-white font-medium mb-10 lg:mb-14">
+                    <div className="flex flex-wrap justify-center gap-x-6 md:gap-x-10 gap-y-[12px] font-poppins text-[16px] md:text-[20px] text-white font-medium mb-10 lg:mb-14">
                         <div className="flex items-center gap-[8px]">
                             <FaRegCheckCircle className="text-[20px] font-light" />
                             <span className="tracking-wide text-white">No Adulterants</span>

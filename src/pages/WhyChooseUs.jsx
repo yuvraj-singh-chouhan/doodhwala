@@ -79,7 +79,7 @@ function WhyChooseUs() {
                 {/* Top Split Section */}
                 <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 xl:gap-20 mb-20 lg:mb-28 items-center lg:items-stretch">
                     {/* Placeholder Image */}
-                    <div className="w-full lg:w-[45%] aspect-square lg:aspect-[4/3.2] bg-[#EAEAEA] rounded-[24px] shadow-inner flex items-center justify-center relative overflow-hidden group flex-shrink-0">
+                    <div className="w-full lg:w-1/2 md:aspect-[4/3] bg-[#EAEAEA] rounded-[24px] shadow-inner flex flex-col items-center justify-center relative overflow-hidden group flex-shrink-0">
                         <img
                             src="WCU/why-choose-us.png"
                             alt="Fresh Dairy Farms"
@@ -88,15 +88,15 @@ function WhyChooseUs() {
                     </div>
 
                     {/* Text block */}
-                    <div className="w-full lg:w-[55%] flex text-left items-center pt-2 lg:pt-0">
-                        <p className="font-poppins text-[15px] md:text-[17px] lg:text-[19px] text-[#7A848D] leading-[1.7] lg:leading-[1.8] font-light">
-                            Welcome to BTech Doodhwala, where we believe your family deserves nothing less than absolute purity. In a market filled with preservatives and artificial processing, we are on a mission to bring you 100% pure, farm-fresh milk exactly as nature intended. By bridging the gap between ethical local dairy farming and modern quality control, we ensure that every drop you drink is strictly lab-tested, completely unadulterated, and safely delivered in eco-friendly glass bottles. We don't just deliver milk; we deliver health, trust, and peace of mind straight to your doorstep every morning.
+                    <div className="w-full lg:w-1/2 flex text-left items-center pt-2 lg:pt-0">
+                        <p className="font-poppins text-[16px] md:text-[24px] lg:text-[26px] text-[#7A848D] leading-[1.8] lg:leading-[1.7] font-light">
+                            Welcome to BTech Doodhwala, where we believe your family deserves nothing less than absolute purity. In a market filled with preservatives and artificial processing, we are on a mission to bring you <strong className="font-medium text-[#45628a]">100% pure, farm-fresh milk</strong> exactly as nature intended. By bridging the gap between ethical local dairy farming and modern quality control, we ensure that every drop you drink is <strong className="font-medium text-[#45628a]">strictly lab-tested, completely unadulterated, and safely delivered in eco-friendly glass bottles.</strong> We don't just deliver milk; we deliver health, trust, and peace of mind straight to your doorstep every morning.
                         </p>
                     </div>
                 </div>
 
                 {/* Features Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-20 xl:gap-x-28 gap-y-10 lg:gap-y-12 mx-auto mb-16 px-2 lg:px-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-20 xl:gap-x-28 gap-y-10 lg:gap-y-12 mx-auto mb-12 px-2 lg:px-8">
                     {chooseUsData.map((item, index) => (
                         <FeatureItem key={index} title={item.title} description={item.description} image={item.image} />
                     ))}
@@ -104,7 +104,7 @@ function WhyChooseUs() {
             </div>
 
             {/* Bottom Subscription Component */}
-            <div className="w-full relative z-20 mt-4 bg-white">
+            <div className="w-full relative z-20 bg-white">
                 <Subscription />
             </div>
 

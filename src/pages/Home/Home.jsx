@@ -1,10 +1,13 @@
 import Hero from "../../components/Hero";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import DeliveryProcess from "./DeliveryProcess";
 import Subscription from "./Subscription";
 import SubsBanner from "./SubsBanner";
 import SubsPrice from "./SubsPrice";
 import Marquee from "../../components/Marquee";
+import PurityBanner from "./PurityBanner";
+import EffortLessBanner from "../../components/EffortLessBanner";
 
 function ChooseUS({ title, subTitle, imgSrc, index }) {
     const isIndented = index % 2 !== 0;
@@ -76,8 +79,8 @@ function Home() {
                 <div className="container mx-auto px-6 md:px-12 lg:px-[120px] relative z-10">
 
                     {/* Header Section */}
-                    <div className="text-center mb-16 lg:mb-20">
-                        <h1 className="font-[Ruksha] text-[45px] md:text-[65px] lg:text-[75px] text-[#45628A] uppercase leading-none mb-4 tracking-wider">
+                    <div className="md:text-center mb-16 lg:mb-20">
+                        <h1 className="font-[Ruksha] text-[40px] md:text-[65px] lg:text-[75px] text-[#45628A] uppercase leading-none mb-4 tracking-wider">
                             Why Choose Us
                         </h1>
                         <p className="text-[20px] md:text-[26px] lg:text-[28px] font-semibold font-poppins text-[#45628A] mb-3 leading-snug">
@@ -108,10 +111,10 @@ function Home() {
 
                             {/* Button */}
                             <div className="mt-8 lg:mt-12 lg:mr-[10%] z-20 relative self-end lg:self-auto pr-4 lg:pr-0">
-                                <button className="flex items-center gap-2 bg-[#5A779D] hover:bg-[#45628A] text-white py-5 px-9 font-semibold rounded-full font-poppins font-medium transition-all shadow-md">
+                                <Link to="/why-choose-us" className="flex items-center gap-2 bg-[#5A779D] hover:bg-[#45628A] text-white py-5 px-9 font-semibold rounded-full font-poppins font-medium transition-all shadow-md">
                                     <FaArrowRightLong />
                                     Know More
-                                </button>
+                                </Link>
                             </div>
                         </div>
 
@@ -120,13 +123,15 @@ function Home() {
             </section>
             <SubsBanner />
             <DeliveryProcess />
-            
+
             <div className="hidden md:block">
                 <Marquee />
             </div>
-            
+
             <Subscription />
             <SubsPrice />
+            {/* <PurityBanner /> */}
+            <EffortLessBanner />
         </>
     )
 }

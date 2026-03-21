@@ -15,12 +15,12 @@ function SubsBanner() {
             </div>
 
             {/* Content Container */}
-            <div className="relative z-10 flex flex-col items-center text-center w-full max-w-[900px] mx-auto mt-8 lg:mt-0 px-1 sm:px-6">
+            <div className="relative z-10 flex flex-col items-center md:text-center w-full max-w-[900px] mx-auto mt-8 lg:mt-0 px-1 sm:px-6">
                 <h1 className="font-[Ruksha] text-[36px] sm:text-[42px] md:text-[50px] lg:text-[60px] xl:text-[65px] text-white uppercase leading-[1.05] tracking-wide drop-shadow-sm mb-4 md:mb-6 max-w-[95%]">
                     Purity You Can Trust, Health Your Family Deserves
                 </h1>
 
-                <p className="text-[14px] sm:text-[15px] md:text-[18px] lg:text-[19px] font-poppins text-white leading-[1.6] md:leading-relaxed font-light max-w-[700px] mx-auto mb-8 md:mb-10 opacity-95 px-2">
+                <p className="text-[20px] sm:text-[20px] md:text-[20px] lg:text-[20px] font-poppins text-white leading-[1.6] md:leading-relaxed font-light max-w-[700px] mx-auto mb-8 md:mb-10 opacity-95 px-2">
                     Say goodbye to adulterated milk and harmful plastic packets. Join hundreds of families who trust BTech Doodhwala for their daily nutrition. Start your hassle-free subscription today and wake up to farm-fresh purity every morning!
                 </p>
 
@@ -36,9 +36,9 @@ function SubsBanner() {
             </div>
 
             {/* Bottom/Right Bottles Image */}
-            <div className="absolute bottom-[-10%] md:bottom-[-15%] lg:bottom-[-12%] xl:bottom-[-15%] left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-auto lg:right-[0%] xl:right-[2%] flex justify-center lg:justify-end pointer-events-none z-0 w-[110%] sm:w-[90%] lg:w-auto">
+            <div className=" absolute bottom-[0%] md:bottom-[-10%] lg:bottom-[-12%] xl:bottom-[-15%] left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-auto lg:right-[0%] xl:right-[2%] flex justify-center lg:justify-end pointer-events-none z-0 w-[110%] sm:w-[90%] lg:w-auto">
                 <img
-                    src="/common/milk-bottle.png"
+                    src="/common/milk-bottle-full.png"
                     alt="Milk Bottles"
                     className="w-full max-w-[320px] sm:max-w-[360px] md:max-w-[450px] lg:max-w-[380px] xl:max-w-[420px] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.25)] lg:-translate-x-6"
                 />
