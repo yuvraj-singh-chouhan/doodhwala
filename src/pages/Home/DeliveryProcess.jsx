@@ -129,7 +129,7 @@ function DeliveryProcess() {
                             <p className="font-poppins text-[18px] font-bold text-[#45628A] leading-tight mb-1">{item.title}</p>
                             <p className="font-poppins text-[14px] text-[#7A848D] leading-snug">{item.subTitle}</p>
                         </div>
-                        <div className='w-[10px] text-md h-[10x] rounded rounded-full bg-brand-blue text-white flex items-center justify-center md:hidden py-2 px-5 font-bold'>{idx + 1}</div>
+                        <div className='w-[10px] text-md h-[10x] ml-auto rounded rounded-full bg-brand-blue text-white flex items-center justify-center md:hidden py-2 px-5 font-bold'>{idx + 1}</div>
                     </div>
                 ))}
                 <img src="/DP/DP7.jpg" className=" object-contain" alt={DeliveryProcessInfo[3].title} />
