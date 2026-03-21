@@ -1,11 +1,11 @@
 function Subscription() {
     return (
-        <section className="overflow-hidden relative w-full overflow-hidden pb-12 pt-16 lg:pt-24 bg-white z-0 mb-12">
+        <section className="overflow-hidden relative w-full overflow-hidden pb-12 pt-16 lg:pt-24 z-0 mb-12">
             {/* Background Decorative Rings */}
             <div className="absolute -right-[20%] top-[10%] w-[800px] h-[800px] rounded-full border-[70px] border-[#F4F6F9] -z-10 hidden lg:block pointer-events-none" />
 
             {/* Main Content Container */}
-            <div className="bg-brand-blue md:bg-white w-[100%] md:w-[90%] pt-24 mx-auto px-8 md:px-12 lg:px-[100px] relative z-20">
+            <div className="bg-brand-blue md:bg-transparent w-[100%] md:w-[90%] pt-24 mx-auto px-8 md:px-12 lg:px-[100px] relative z-20">
 
                 {/* Header Section */}
                 <div className="md:text-center mb-10 md:mb-14">

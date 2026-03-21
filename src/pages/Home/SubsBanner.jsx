@@ -3,7 +3,7 @@ import Button from '../../components/Button';
 
 function SubsBanner() {
     return (
-        <section className="relative bg-[#5773A0] overflow-hidden flex flex-col items-center justify-center min-h-[600px] lg:min-h-[450px] pt-[200px] pb-[320px] lg:py-20 px-4 md:px-12 w-full mt-10 md:mt-20">
+        <section className="relative bg-[#5773A0] overflow-hidden flex flex-col items-center justify-center min-h-[600px] lg:min-h-[550px] pt-[200px] pb-[320px] lg:py-20 px-4 md:px-12 w-full h-full">
 
             {/* Top/Left Splash Image */}
             <div className="absolute top-[-5%] md:top-[-10%] left-1/2 -translate-x-1/2 lg:top-0 lg:bottom-0 lg:left-[-15%] xl:left-[-10%] lg:translate-x-0 w-[120%] sm:w-[100%] lg:w-auto lg:h-full flex justify-center lg:justify-start pointer-events-none z-0">
@@ -27,12 +27,6 @@ function SubsBanner() {
                 <Button variant="white" className="rounded-full px-8 py-3.5 text-[#5773A0] font-bold text-[16px] md:text-[18px] shadow-lg hover:shadow-xl transition-shadow z-20 relative">
                     Start Your Subscription
                 </Button>
-
-                {/* Optional dots for desktop styling */}
-                <div className="hidden lg:flex gap-[12px] mt-12 mb-4 justify-center items-center">
-                    <span className="w-2 h-2 rounded-full bg-[#3e4f63]"></span>
-                    <span className="w-2.5 h-2.5 rounded-full border-[1.5px] border-white/60"></span>
-                </div>
             </div>
 
             {/* Bottom/Right Bottles Image */}

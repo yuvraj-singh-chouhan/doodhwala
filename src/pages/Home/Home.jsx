@@ -121,7 +121,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <SubsBanner />
+            {/* <SubsBanner /> */}
             <DeliveryProcess />
 
             <div className="hidden md:block">
@@ -129,9 +129,9 @@ function Home() {
             </div>
 
             <Subscription />
-            <SubsPrice />
-            {/* <PurityBanner /> */}
             <EffortLessBanner />
+            <SubsPrice />
+            <PurityBanner />
         </>
     )
 }

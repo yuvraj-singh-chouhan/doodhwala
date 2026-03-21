@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import PurityBanner from "../pages/Home/PurityBanner";
+import SubsBanner from '../pages/Home/SubsBanner';
 
 function EffortLessBanner() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -51,7 +51,8 @@ function EffortLessBanner() {
 
                 {/* SLIDE 2: Purity Banner */}
                 <div className="w-full flex-shrink-0 flex items-stretch">
-                    <PurityBanner />
+                    {/* <PurityBanner /> */}
+                    <SubsBanner />
                 </div>
             </div>
 
