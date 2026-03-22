@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home/Home';
 import OurProcess from './pages/OurProcess';
 import WhyChooseUs from './pages/WhyChooseUs';
+import TermsAndConditions from './pages/TermsAndConditions';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/our-process" element={<OurProcess />} />
             <Route path="/why-choose-us" element={<WhyChooseUs />} />
+            <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </div>
       </div>

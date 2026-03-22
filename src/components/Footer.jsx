@@ -1,5 +1,6 @@
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { BsShieldFillCheck } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -38,10 +39,11 @@ function Footer() {
                     <div className="md:col-span-3 lg:col-span-2 flex flex-col mt-4 md:mt-2">
                         <h3 className="text-lg text-gray-800 font-bold mb-4">Explore</h3>
                         <ul className="space-y-3">
-                            <li><a href="#" className="text-[16px] text-gray-700 hover:text-gray-900 transition-colors font-medium">Why Choose Us</a></li>
-                            <li><a href="#" className="text-[16px] text-gray-700 hover:text-gray-900 transition-colors font-medium">Our Process</a></li>
-                            <li><a href="#" className="text-[16px] text-gray-700 hover:text-gray-900 transition-colors font-medium">Subscription</a></li>
-                            <li><a href="#" className="text-[16px] text-gray-700 hover:text-gray-900 transition-colors font-medium">Contact</a></li>
+                            <li><Link to="/why-choose-us" className="text-[16px] text-gray-700 hover:text-gray-900 transition-colors font-medium">Why Choose Us</Link></li>
+                            <li><Link to="/our-process" className="text-[16px] text-gray-700 hover:text-gray-900 transition-colors font-medium">Our Process</Link></li>
+                            <li><Link to="/subscription" className="text-[16px] text-gray-700 hover:text-gray-900 transition-colors font-medium">Subscription</Link></li>
+                            <li><Link to="/terms-and-conditions" className="text-[16px] text-gray-700 hover:text-gray-900 transition-colors font-medium">Terms & Conditions</Link></li>
+                            <li><Link to="/privacy-policy" className="text-[16px] text-gray-700 hover:text-gray-900 transition-colors font-medium">Privacy Policy</Link></li>
                         </ul>
                     </div>
 
