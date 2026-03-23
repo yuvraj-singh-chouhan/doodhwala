@@ -10,7 +10,9 @@ function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
                     {/* Left Column */}
                     <div className="md:col-span-6 lg:col-span-5 flex flex-col items-start text-[14px]">
-                        <img src="/logo.png" alt="BTech Doodhwala" className="h-20 mb-4" />
+                        <Link to="/">
+                            <img src="/logo.png" alt="BTech Doodhwala" className="h-20 mb-4" />
+                        </Link>
                         <p className="text-gray-700 mb-8 leading-relaxed text-[16px] max-w-[400px]">
                             We are committed to delivering 100% pure, lab-tested, and farm-fresh milk in eco-friendly glass bottles directly to your doorstep.
                         </p>

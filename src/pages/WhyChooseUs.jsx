@@ -1,5 +1,6 @@
 import React from 'react';
 import Subscription from './Home/Subscription';
+import SectionHeading from '../components/SectionHeading';
 
 const chooseUsData = [
     {
@@ -60,24 +61,24 @@ function FeatureItem({ title, description, image }) {
 
 function WhyChooseUs() {
     return (
-        <div className="w-full bg-white relative pb-10 pt-16">
+        <div className="w-full bg-white relative pb-10 pt-6">
             <div className="container mx-auto px-6 md:px-12 lg:px-[100px]">
 
                 {/* Header Section */}
-                <div className="mb-14 text-left">
-                    <h1 className="font-[Ruksha] text-[40px] md:text-[50px] lg:text-[65px] text-[#494949] uppercase leading-none tracking-wide mb-3 md:mb-5 drop-shadow-sm">
+                <div className="mb-4 text-left">
+                    <SectionHeading>
                         WHY CHOOSE US
-                    </h1>
-                    <p className="font-poppins text-[22px] md:text-[26px] lg:text-[28px] font-bold text-[#45628A] mb-3 leading-tight">
+                    </SectionHeading>
+                    <p className="font-poppins text-[18px] md:text-[22px] lg:text-[24px] font-bold text-[#45628A] mb-3 leading-tight">
                         Why BTech Doodhwala is the Best Choice for Your Family?
                     </p>
-                    <p className="font-poppins text-lg md:text-[20px] lg:text-[22px] text-[#A3A3A3] font-light">
+                    <p className="font-poppins text-lg md:text-[18px] lg:text-[20px] text-[#A3A3A3] font-light">
                         We don't just deliver milk; we deliver health, purity, and trust
                     </p>
                 </div>
 
                 {/* Top Split Section */}
-                <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 xl:gap-20 mb-20 lg:mb-28 items-center lg:items-stretch">
+                <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 xl:gap-20 mb-8 lg:mb-8 items-center lg:items-stretch">
                     {/* Placeholder Image */}
                     <div className="w-full lg:w-1/2 md:aspect-[4/3] bg-[#EAEAEA] rounded-[24px] shadow-inner flex flex-col items-center justify-center relative overflow-hidden group flex-shrink-0">
                         <img
@@ -88,8 +89,8 @@ function WhyChooseUs() {
                     </div>
 
                     {/* Text block */}
-                    <div className="w-full lg:w-1/2 flex text-left items-center pt-2 lg:pt-0">
-                        <p className="font-poppins text-[16px] md:text-[24px] lg:text-[26px] text-[#7A848D] leading-[1.8] lg:leading-[1.7] font-light">
+                    <div className="w-full lg:w-1/2 flex items-center pt-2 lg:pt-0">
+                        <p className="font-poppins text-[16px] md:text-[24px] lg:text-[26px] text-[#7A848D] leading-[1.8] lg:leading-[1.7] font-light text-justify">
                             Welcome to BTech Doodhwala, where we believe your family deserves nothing less than absolute purity. In a market filled with preservatives and artificial processing, we are on a mission to bring you <strong className="font-medium text-[#45628a]">100% pure, farm-fresh milk</strong> exactly as nature intended. By bridging the gap between ethical local dairy farming and modern quality control, we ensure that every drop you drink is <strong className="font-medium text-[#45628a]">strictly lab-tested, completely unadulterated, and safely delivered in eco-friendly glass bottles.</strong> We don't just deliver milk; we deliver health, trust, and peace of mind straight to your doorstep every morning.
                         </p>
                     </div>

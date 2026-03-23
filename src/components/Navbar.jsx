@@ -53,7 +53,7 @@ function Navbar() {
 
                     {/* Mobile Menu Header */}
                     <div className="flex items-center justify-between p-6 border-b border-gray-100">
-                        <Link to="/" className="hidden md:flex items-center">
+                        <Link onClick={() => setIsMenuOpen(false)} to="/" className="md:flex items-center">
                             <img src="/logo.png" alt="BTech Doodhwala" className="h-14" />
                         </Link>
                         <button

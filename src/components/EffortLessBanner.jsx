@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SubsBanner from '../pages/Home/SubsBanner';
+import { Link } from 'react-router-dom';
 
 function EffortLessBanner() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -15,7 +16,7 @@ function EffortLessBanner() {
     const prevSlide = () => setCurrentSlide((prev) => (prev === 0 ? 1 : 0));
 
     return (
-        <div className="relative w-full overflow-hidden group my-10 md:my-20">
+        <div className="relative w-full overflow-hidden group my-10 md:my-20 ">
             <div
                 className="flex transition-transform duration-700 ease-in-out items-stretch"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -38,13 +39,15 @@ function EffortLessBanner() {
                                 EFFORTLESS MORNINGS, <br className="hidden lg:block" /> FREE FRESHNESS.
                             </h2>
 
-                            <p className="font-poppins text-[20px] md:text-[16px] lg:text-[18px] opacity-95 leading-[1.6] md:leading-relaxed max-w-[750px] mb-8 md:mb-10 font-light">
+                            <p className="font-poppins text-[18px] md:text-[20px] lg:text-[24px] opacity-95 leading-[1.6] md:leading-relaxed max-w-[750px] mb-8 md:mb-10 font-light ">
                                 Skip the market and last-minute runs. Get 100% farm-fresh, pasteurized milk in eco-friendly glass bottles, delivered straight to your doorstep—at zero extra cost. Flexible morning slots (6am-10am) available.
                             </p>
 
-                            <button className="bg-white text-[#5A779D] px-12 md:px-10 py-5 md:py-4 rounded-full font-bold font-poppins text-[18px] md:text-[16px] uppercase tracking-wide shadow-lg hover:bg-gray-50 hover:scale-105 transition-all">
-                                Start Free Delivery
-                            </button>
+                            <Link to={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}`} target="_blank">
+                                <button className="bg-white text-[#5A779D] px-10 md:px-10 py-5 md:py-4 rounded-full font-bold font-poppins text-[16px] md:text-[18px] uppercase tracking-wide shadow-lg hover:bg-gray-50 hover:scale-105 transition-all">
+                                    Start Free Delivery
+                                </button>
+                            </Link>
                         </div>
                     </section>
                 </div>

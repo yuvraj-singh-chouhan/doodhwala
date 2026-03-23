@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../components/Button';
+import { Link } from 'react-router-dom';
 
 function SubsBanner() {
     return (
@@ -24,9 +25,11 @@ function SubsBanner() {
                     Say goodbye to adulterated milk and harmful plastic packets. Join hundreds of families who trust BTech Doodhwala for their daily nutrition. Start your hassle-free subscription today and wake up to farm-fresh purity every morning!
                 </p>
 
-                <Button variant="white" className="rounded-full px-8 py-3.5 text-[#5773A0] font-bold text-[16px] md:text-[18px] shadow-lg hover:shadow-xl transition-shadow z-20 relative">
-                    Start Your Subscription
-                </Button>
+                <Link to={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}`} target="_blank">
+                    <Button variant="white" className="rounded-full px-8 py-5 text-[#5773A0] font-bold text-[16px] md:text-[18px] shadow-lg hover:shadow-xl transition-shadow z-20 relative">
+                        Start Your Subscription
+                    </Button>
+                </Link>
             </div>
 
             {/* Bottom/Right Bottles Image */}

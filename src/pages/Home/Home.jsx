@@ -71,22 +71,18 @@ function Home() {
     return (
         <>
             <Hero />
-            <div className="md:hidden">
-                <Marquee />
-            </div>
-
-            <section className="relative w-full overflow-hidden pb-24 pt-10">
+            <section className="relative w-full overflow-hidden pb-24 pt-10 mb-12">
                 <div className="container mx-auto px-6 md:px-12 lg:px-[120px] relative z-10">
 
                     {/* Header Section */}
-                    <div className="md:text-center mb-16 lg:mb-20">
-                        <h1 className="font-[Ruksha] text-[40px] md:text-[65px] lg:text-[75px] text-[#45628A] uppercase leading-none mb-4 tracking-wider">
+                    <div className="md:text-center lg:mb-20 py-3">
+                        <h1 className="font-[Ruksha] text-[38px] md:text-[40px] lg:text-[48px] text-[#45628A] uppercase leading-none mb-2 tracking-wider">
                             Why Choose Us
                         </h1>
-                        <p className="text-[20px] md:text-[26px] lg:text-[28px] font-semibold font-poppins text-[#45628A] mb-3 leading-snug">
+                        <p className="text-[18px] md:text-[22px] lg:text-[24px] font-semibold font-poppins text-[#45628A] mb-1 leading-snug">
                             Why BTech Doodhwala is the Best Choice for Your Family?
                         </p>
-                        <p className="text-[18px] md:text-[22px] font-poppins text-[#A3A3A3]">
+                        <p className="text-[18px] md:text-[20px] font-poppins text-[#A3A3A3]">
                             We don't just deliver milk; we deliver health, purity, and trust
                         </p>
                     </div>
@@ -122,6 +118,7 @@ function Home() {
                 </div>
             </section>
             {/* <SubsBanner /> */}
+            <EffortLessBanner />
             <DeliveryProcess />
 
             <div className="hidden md:block">
@@ -129,7 +126,6 @@ function Home() {
             </div>
 
             <Subscription />
-            <EffortLessBanner />
             <SubsPrice />
             <PurityBanner />
         </>

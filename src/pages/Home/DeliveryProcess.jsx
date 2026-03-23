@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import SectionHeading from '../../components/SectionHeading';
 
 function DeliveryProcess() {
     const DeliveryProcessInfo = [
@@ -35,13 +36,13 @@ function DeliveryProcess() {
     ];
 
     return (
-        <section className="relative w-full overflow-hidden pb-16 pt-24 bg-white z-0">
+        <section className="relative w-full overflow-hidden pb-6 pt-12 bg-white z-0">
             {/* Header Content */}
             <div className="container mx-auto px-4 md:px-8 lg:px-[120px] relative z-20">
-                <div className="md:text-center mb-10">
-                    <h1 className="font-[Ruksha] text-[35px] md:text-[55px] lg:text-[65px] text-[#45628A] uppercase leading-none mb-3 md:tracking-wide">
+                <div className="md:text-center mb-2">
+                    <SectionHeading>
                         OUR MILK DELIVERY PROCESS
-                    </h1>
+                    </SectionHeading>
                     <p className="text-[17px] md:text-[20px] lg:text-[22px] font-poppins text-[#7A848D]">
                         FROM FARM TO YOUR DOOR - TOTAL transparency in every step.
                     </p>
@@ -49,7 +50,7 @@ function DeliveryProcess() {
             </div>
 
             {/* Desktop Circular Layout (hidden on mobile, visible on lg) */}
-            <div className="hidden lg:flex relative w-full max-w-[1100px] mx-auto h-[600px] items-center justify-center mt-6 mb-12 z-10">
+            <div className="hidden lg:flex relative w-full max-w-[1100px] mx-auto h-[600px] items-center justify-center mt-6 mb-6 z-10">
 
 
                 {/* Central Bottles Image */}
@@ -119,7 +120,7 @@ function DeliveryProcess() {
             </div>
 
             {/* Mobile Layout (Visible only under LG breakpoints) */}
-            <div className="flex lg:hidden flex-col gap-2 w-full px-2 mt-12 mb-6 z-10 max-w-[450px] mx-auto">
+            <div className="flex lg:hidden flex-col gap-2 w-full px-2 mb-6 z-10 max-w-[450px] mx-auto">
                 {DeliveryProcessInfo.map((item, idx) => (
                     <div className="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-50" key={idx}>
                         <div className="w-[50px] h-[50px] rounded-full flex items-center justify-center flex-shrink-0 relative overflow-hidden">

@@ -10,11 +10,11 @@ function PurityBanner() {
                 <div className="w-full md:w-[65%] lg:w-[55%] flex flex-col z-20">
 
                     {/* Desktop Title */}
-                    <h1 className="hidden md:block font-[Ruksha] text-[48px] md:text-[56px] lg:text-[68px] leading-[1.05] tracking-wide mb-5 text-white uppercase drop-shadow-sm">
+                    <h1 className="hidden md:block font-[Ruksha] text-[24px] md:text-[42px] lg:text-[52px] leading-[1.05] tracking-wide mb-5 text-white uppercase drop-shadow-sm">
                         The Purity Journey<br /> Continues...
                     </h1>
                     {/* Mobile Title */}
-                    <h1 className="md:hidden font-[Ruksha] text-[52px] sm:text-[60px] leading-[1.0] tracking-wide mb-6 text-white uppercase drop-shadow-sm">
+                    <h1 className="md:hidden font-[Ruksha] text-[38px] sm:text-[48px] leading-[1.0] tracking-wide mb-6 text-white uppercase drop-shadow-sm">
                         The Purity <br /> Journey <br /> Continues...
                     </h1>
 

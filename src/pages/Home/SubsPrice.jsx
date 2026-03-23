@@ -2,7 +2,7 @@ import React from 'react';
 
 function SubsPrice() {
     return (
-        <section className="container mx-auto px-3 md:px-16 py-12 md:py-24 overflow-hidden bg-white">
+        <section className="container mx-auto px-3 md:px-16 py-4 md:py-28 overflow-hidden bg-white">
 
             {/* Desktop View */}
             <div className="hidden md:flex relative w-full mx-auto bg-[#EAF2FB] rounded-[30px] md:rounded-[40px] flex-col md:flex-row items-center justify-center p-10 md:p-0 md:h-[180px] lg:h-[310px] border border-blue-50 shadow-sm mt-8 mb-16">

@@ -7,10 +7,12 @@ import OurProcess from './pages/OurProcess';
 import WhyChooseUs from './pages/WhyChooseUs';
 import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <div className="min-h-screen font-poppins text-brand-dark-blue flex flex-col">
         <Navbar />
         <div className="flex-1">

@@ -1,28 +1,37 @@
+import { Link } from "react-router-dom";
+import SectionHeading from "../../components/SectionHeading";
+
 function Subscription() {
     return (
         <section className="overflow-hidden relative w-full overflow-hidden pb-12 pt-16 lg:pt-24 z-0 mb-12">
             {/* Background Decorative Rings */}
             <div className="absolute -right-[20%] top-[10%] w-[800px] h-[800px] rounded-full border-[70px] border-[#F4F6F9] -z-10 hidden lg:block pointer-events-none" />
 
-            {/* Main Content Container */}
-            <div className="bg-brand-blue md:bg-transparent w-[100%] md:w-[90%] pt-24 mx-auto px-8 md:px-12 lg:px-[100px] relative z-20">
 
+            {/* Main Content Container */}
+            <div className="bg-brand-blue md:bg-transparent w-[100%] md:w-[90%] md:pt-24 mx-auto px-8 md:px-12 lg:px-[100px] relative z-20">
+
+                {/* Mobile Floating Milk Image */}
+                <div className="lg:hidden flex justify-center w-[100%] mx-auto relative z-0 -mt-8 md:-mt-12 pointer-events-none">
+                    <img src="/common/floating-milk.png" alt="Floating Milk" className="w-[85%] max-w-[280px] h-auto object-contain" />
+                </div>
                 {/* Header Section */}
                 <div className="md:text-center mb-10 md:mb-14">
-                    <h1 className="font-[Ruksha] text-[40px] md:text-[50px] lg:text-[60px] text-white md:text-brand-blue uppercase leading-[1.1] mb-3 tracking-wide max-w-[800px] mx-auto">
+                    <SectionHeading className="text-white md:text-brand-blue">
                         FLEXIBLE SUBSCRIPTION<br className="hidden md:block" /> MADE SIMPLE
-                    </h1>
+                    </SectionHeading>
                     <p className="text-[20px] md:text-[24px] lg:text-[24px] font-poppins text-white md:text-gray-600">
                         Flexible Subscription Made Simple
                     </p>
                 </div>
 
                 {/* Subscription Blue Box */}
-                <div className="overflow-hidden md:bg-brand-blue rounded-[24px] md:p-12 lg:p-14 relative md:shadow-md flex flex-col lg:flex-row min-h-[460px] overflow-hidden lg:overflow-hidden">
+                <div className="md:bg-brand-blue rounded-[24px] relative md:shadow-md flex flex-col lg:flex-row lg:min-h-[456px] overflow-hidden lg:overflow-visible">
 
                     {/* Background Desktop Image (Bottles + Milk Splash) */}
-                    <div className="hidden overflow-hidden lg:flex absolute lg:-bottom-0 right-0 h-[70.5%] w-[50%] z-0 pointer-events-none justify-end">
-                        <img src="/common/milk-bottle-full.png" alt="Subscription Milk Details" className="h-[100%] w-auto object-cover object-right-top -mr-[2px]" />
+                    <div className="hidden lg:flex flex-col justify-between absolute lg:-bottom-0 right-0 h-[100%] z-0 pointer-events-none justify-end items-end">
+                        <img src="/common/milk-bottle-full.png" alt="Subscription Milk Details" className="h-[70.5%] w-auto object-contain object-right-bottom -mr-[2px]" />
+                        <img src="/common/floating-milk.png" alt="Floating Milk" className="absolute top-[0%] right-[15%] w-[55%] max-w-[350px] h-auto object-contain z-10" />
                     </div>
 
                     {/* Columns Wrapper */}
@@ -30,54 +39,56 @@ function Subscription() {
 
                         {/* 1st Column: Features */}
                         <div className="flex text-white flex flex-col md:px-5 md:p-9">
-                            <h2 className="font-poppins text-[30px] font-semibold md:text-[42px] lg:text-5xl font-bold mb-6 ">Subscription Features:</h2>
+                            <h2 className="font-poppins text-[30px] font-semibold md:text-[38px] lg:text-[42px] font-bold mb-6 ">Subscription Features:</h2>
 
                             <ul className="space-y-[18px] font-semibold">
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[20px] md:text-2xl leading-snug">1 Litre Glass Bottle System</p>
+                                    <p className="font-poppins text-[16px] md:text-[18px] leading-snug">1 Litre Glass Bottle System</p>
                                 </li>
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[20px] md:text-2xl leading-snug">Custom Delivery Options</p>
+                                    <p className="font-poppins text-[16px] md:text-[18px] leading-snug">Custom Delivery Options</p>
                                 </li>
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[18px] md:text-2xl leading-snug">Easy Online Modifications as<br className="hidden md:block" /> per needs (Via WhatsApp)</p>
+                                    <p className="font-poppins text-[16px] md:text-[18px] leading-snug">Easy Online Modifications as<br className="hidden md:block" /> per needs (Via WhatsApp)</p>
                                 </li>
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[18px] md:text-2xl leading-snug">Browse Transactional History<br className="hidden md:block" /> 24/7 (Via WhatsApp Support)</p>
+                                    <p className="font-poppins text-[16px] md:text-[18px] leading-snug">Browse Transactional History<br className="hidden md:block" /> 24/7 (Via WhatsApp Support)</p>
                                 </li>
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[18px] md:text-2xl leading-snug">Pay Online 24/7 (UPI/Direct Transfer)</p>
+                                    <p className="font-poppins text-[16px] md:text-[18px] leading-snug">Pay Online 24/7 (UPI/Direct Transfer)</p>
                                 </li>
                             </ul>
 
                             <div className="hidden md:block mt-10 lg:mt-12">
-                                <button className="bg-white text-brand-blue font-poppins font-bold text-[15px] md:text-[16px] px-8 py-[14px] rounded-full shadow-sm hover:bg-[#EEF1F6] hover:scale-105 transition-all">
-                                    Start Your Subscription
-                                </button>
+                                <Link to={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}`} target="_blank">
+                                    <button className="bg-white text-brand-blue font-poppins font-bold text-[15px] md:text-[16px] px-8 py-[14px] rounded-full shadow-sm hover:bg-[#EEF1F6] hover:scale-105 transition-all">
+                                        Start Your Subscription
+                                    </button>
+                                </Link>
                             </div>
                         </div>
 
                         {/* 2nd Column: Delivery Slots */}
                         <div className="flex-1 text-white flex flex-col lg:pr-10 mt-3 md:mt-0 md:p-9">
-                            <h2 className="font-poppins text-[30px] font-semibold md:text-[42px] lg:text-5xl font-bold mb-6">Flexible Delivery Slots:</h2>
+                            <h2 className="font-poppins text-[30px] font-semibold md:text-[38px] lg:text-[42px] font-bold mb-6">Flexible Delivery Slots:</h2>
 
                             <ul className="space-y-[18px] font-semibold">
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[20px] md:text-2xl leading-snug">6:00 AM – 8:00 AM</p>
+                                    <p className="font-poppins text-[16px] md:text-[18px]  leading-snug">6:00 AM – 8:00 AM</p>
                                 </li>
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[18px] md:text-2xl leading-snug">8:00 AM – 10:00 AM</p>
+                                    <p className="font-poppins text-[16px] md:text-[18px] leading-snug">8:00 AM – 10:00 AM</p>
                                 </li>
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[18px] md:text-2xl leading-snug">Anytime During The Day</p>
+                                    <p className="font-poppins text-[16px] md:text-[18px]  leading-snug">Anytime During The Day</p>
                                 </li>
                             </ul>
 
@@ -88,9 +99,11 @@ function Subscription() {
                             </div>
 
                             <div className="md:hidden mt-10 lg:mt-12 sm:mx-auto">
-                                <button className="bg-white text-brand-blue font-poppins font-bold text-[18px] md:text-[16px] px-6 py-[14px] rounded-full shadow-sm hover:bg-[#EEF1F6] hover:scale-105 transition-all">
-                                    Start Your Subscription
-                                </button>
+                                <Link to={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}`} target="_blank">
+                                    <button className="bg-white text-brand-blue font-poppins font-bold text-[18px] md:text-[16px] px-6 py-[14px] rounded-full shadow-sm hover:bg-[#EEF1F6] hover:scale-105 transition-all">
+                                        Start Your Subscription
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

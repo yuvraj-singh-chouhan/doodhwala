@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaRegCheckCircle } from 'react-icons/fa';
 import "./Hero.css"
+import Button from './Button';
+import Marquee from './Marquee';
 
 const Pearl = ({ className, size }) => (
     <div
@@ -16,7 +18,7 @@ const Pearl = ({ className, size }) => (
 function Hero() {
     return (
         <>
-            <section className="min-h-screen relative w-full z-0 bg-brand-blue lg:min-h-[900px] pt-[100px] md:pt-[120px] lg:pt-[140px]  overflow-hidden">
+            <section className="min-h-screen relative w-full z-0 bg-brand-blue lg:min-h-[900px] pt-[100px] md:pt-[120px] lg:pt-[140px] overflow-hidden md:mb-12">
 
                 {/* ━━━ Background Curve layer wrapper ━━━ */}
                 {/* 100% absolute width layer acting as background */}
@@ -101,6 +103,17 @@ function Hero() {
                     </div>
                 </div>
             </section >
+            <div className="md:hidden">
+                <Marquee />
+            </div>
+            <div className="md:hidden my-5 flex flex-col justify-center gap-3 align-center mx-3 px-5">
+                <Button variant='primary' className='py-5 text-semibold text-[16px]'>
+                    Start Your Free Delivery
+                </Button>
+                <Button variant='outline' className='py-5 text-semibold text-[16px]'>
+                    Why Choose Us
+                </Button>
+            </div>
         </>
     );
 }
