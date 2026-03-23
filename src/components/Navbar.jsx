@@ -25,8 +25,8 @@ function Navbar() {
                 <div className="hidden md:flex space-x-6 lg:space-x-12 font-bold text-lg tracking-wide">
                     <Link to="/why-choose-us" className="hover:text-brand-blue transition-colors">Why Choose Us</Link>
                     <Link to="/our-process" className="hover:text-brand-blue transition-colors">Our Process</Link>
-                    <Link to="/" className="hover:text-brand-blue transition-colors">Subscription</Link>
-                    <Link to="/" className="hover:text-brand-blue transition-colors">Contact</Link>
+                    {/* <Link to="/" className="hover:text-brand-blue transition-colors">Subscription</Link>
+                    <Link to="/" className="hover:text-brand-blue transition-colors">Contact</Link> */}
                 </div>
 
                 {/* Desktop WhatsApp Button */}
@@ -53,7 +53,9 @@ function Navbar() {
 
                     {/* Mobile Menu Header */}
                     <div className="flex items-center justify-between p-6 border-b border-gray-100">
-                        <img src="/logo.png" alt="BTech Doodhwala" className="h-14" />
+                        <Link to="/" className="hidden md:flex items-center">
+                            <img src="/logo.png" alt="BTech Doodhwala" className="h-14" />
+                        </Link>
                         <button
                             onClick={() => setIsMenuOpen(false)}
                             className="text-gray-400 hover:text-gray-800 transition-colors p-2"
@@ -66,13 +68,13 @@ function Navbar() {
                     <div className="flex flex-col pt-8 px-8 gap-8 font-bold text-[18px] text-[#494949]">
                         <Link to="/why-choose-us" onClick={() => setIsMenuOpen(false)} className="hover:text-brand-blue transition-colors">Why Choose Us</Link>
                         <Link to="/our-process" onClick={() => setIsMenuOpen(false)} className="hover:text-brand-blue transition-colors">Our Process</Link>
-                        <Link to="/" onClick={() => setIsMenuOpen(false)} className="hover:text-brand-blue transition-colors">Subscription</Link>
-                        <Link to="/" onClick={() => setIsMenuOpen(false)} className="hover:text-brand-blue transition-colors">Contact</Link>
+                        {/* <Link to="/" onClick={() => setIsMenuOpen(false)} className="hover:text-brand-blue transition-colors">Subscription</Link>
+                        <Link to="/" onClick={() => setIsMenuOpen(false)} className="hover:text-brand-blue transition-colors">Contact</Link> */}
                     </div>
 
                     {/* Mobile Menu Footer Support Button */}
                     <div className="mt-auto p-6 border-t border-gray-100">
-                        <a href="https://wa.me/1234" target="_blank" rel="noopener noreferrer" className="w-full flex justify-center items-center gap-2 py-3.5 bg-[#5A779D] text-white rounded-full font-bold text-[17px] hover:bg-[#45628A] transition-all shadow-md">
+                        <a href={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer" className="w-full flex justify-center items-center gap-2 py-3.5 bg-[#5A779D] text-white rounded-full font-bold text-[17px] hover:bg-[#45628A] transition-all shadow-md">
                             <FaWhatsapp className="text-xl" />
                             <span>Message Us</span>
                         </a>
