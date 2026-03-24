@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function OurProcess() {
     const steps = [
@@ -43,10 +44,10 @@ function OurProcess() {
 
                 {/* Header */}
                 <div className="container mx-auto px-6 md:px-12 lg:px-24 pt-16 pb-12 z-10 relative">
-                    <h1 className="font-[Ruksha] text-[40px] md:text-[50px] lg:text-[65px] text-[#494949] uppercase leading-none tracking-wide mb-2 drop-shadow-sm">
+                    <h1 className="font-[Ruksha] text-[36px] md:text-[42px] lg:text-[50px] text-[#494949] uppercase leading-none tracking-wide mb-2 drop-shadow-sm">
                         OUR MILK DELIVERY PROCESS
                     </h1>
-                    <p className="font-poppins text-lg md:text-[22px] text-[#7A848D]">
+                    <p className="font-poppins text-lg md:text-[20px] text-[#7A848D]">
                         FROM FARM TO YOUR DOOR - Total transparency in every step.
                     </p>
                 </div>
@@ -77,7 +78,7 @@ function OurProcess() {
                                     <h3 className="font-poppins text-[30px] md:text-[30px] font-bold text-[#45628A] mb-3 md:mb-4 font-semibold">
                                         {step.title}
                                     </h3>
-                                    <p className="font-poppins text-[24px] md:text-[26px] text-[#7A848D] leading-[1.65]">
+                                    <p className="font-poppins text-[24px] md:text-[26px] text-[#7A848D] leading-[1.65] text-jusitfy">
                                         {step.description}
                                     </p>
                                 </div>
@@ -106,9 +107,11 @@ function OurProcess() {
                         Skip the market and last-minute runs. Get 100% farm-fresh, pasteurized milk in eco-friendly glass bottles, delivered straight to your doorstep—at zero extra cost. Flexible morning slots (6am-10am) available.
                     </p>
 
-                    <button className="bg-white text-[#5A779D] px-12 md:px-10 py-5 md:py-4 rounded-full font-bold font-poppins text-[18px] md:text-[16px] uppercase tracking-wide shadow-lg hover:bg-gray-50 hover:scale-105 transition-all">
-                        Start Free Delivery
-                    </button>
+                    <Link to={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}`} target="_blank">
+                        <button className="bg-white text-[#5A779D] px-12 md:px-10 py-5 md:py-4 rounded-full font-bold font-poppins text-[18px] md:text-[16px] uppercase tracking-wide shadow-lg hover:bg-gray-50 hover:scale-105 transition-all">
+                            Start Free Delivery
+                        </button>
+                    </Link>
                 </div>
             </section>
         </>

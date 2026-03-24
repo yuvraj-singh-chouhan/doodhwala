@@ -16,7 +16,7 @@ function EffortLessBanner() {
     const prevSlide = () => setCurrentSlide((prev) => (prev === 0 ? 1 : 0));
 
     return (
-        <div className="relative w-full overflow-hidden group my-10 md:my-20 ">
+        <div className="relative w-full overflow-hidden group my-10 md:my-8 ">
             <div
                 className="flex transition-transform duration-700 ease-in-out items-stretch"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}

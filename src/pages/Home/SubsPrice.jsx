@@ -2,16 +2,16 @@ import React from 'react';
 
 function SubsPrice() {
     return (
-        <section className="container mx-auto px-3 md:px-16 py-4 md:py-28 overflow-hidden bg-white">
+        <section className="w-full mx-auto py-4 md:py-28 overflow-hidden bg-white px-3 md:px-0">
 
             {/* Desktop View */}
-            <div className="hidden md:flex relative w-full mx-auto bg-[#EAF2FB] rounded-[30px] md:rounded-[40px] flex-col md:flex-row items-center justify-center p-10 md:p-0 md:h-[180px] lg:h-[310px] border border-blue-50 shadow-sm mt-8 mb-16">
+            <div className="hidden md:flex relative w-[100%] md:w-[80%] mx-auto bg-[#EAF2FB] rounded-[30px] md:rounded-[40px] flex-col md:flex-row items-center justify-center p-10 md:p-0 md:h-[180px] lg:h-[310px] border border-blue-50 shadow-sm mt-8 mb-16">
 
                 {/* Left Cow Character */}
                 <img
                     src="/SubsPrice/subs-price-cow1.png"
                     alt="Cow Character"
-                    className="absolute md:-bottom-1 md:-left-[5%] lg:-left-[8%] h-[180px] md:h-[220px] lg:h-[280px] w-auto object-contain z-10 mb-8 md:mb-0"
+                    className="absolute md:-bottom-1 md:-left-[2%] lg:-left-[3%] h-[180px] md:h-[220px] lg:h-[280px] w-auto object-contain z-10 mb-8 md:mb-0"
                 />
 
                 {/* Center Content Group */}
@@ -19,10 +19,10 @@ function SubsPrice() {
 
                     {/* Cow Milk Price Group */}
                     <div className="flex flex-col items-center flex-1 w-full flex-shrink-0 md:w-auto">
-                        <h3 className="font-[Ruksha] text-[34px] md:text-[36px] lg:text-[44px] font-bold text-[#45628a] uppercase leading-none tracking-wide text-center drop-shadow-sm">
+                        <h3 className="font-[Ruksha] text-[34px] md:text-[36px] lg:text-[44px] font-bold text-[#45628a] uppercase leading-none tracking-wide text-right drop-shadow-sm">
                             Cow Milk:
                         </h3>
-                        <p className="font-[Ruksha] text-[22px] md:text-[22px] lg:text-[26px] font-bold text-[#45628a] uppercase tracking-wide mt-2 md:mt-1 opacity-95 text-center drop-shadow-sm">
+                        <p className="font-[Ruksha] text-[22px] md:text-[22px] lg:text-[26px] font-bold text-[#45628a] uppercase tracking-wide mt-2 md:mt-1 opacity-95 text-right drop-shadow-sm">
                             Rs.90 per litre
                         </p>
                     </div>

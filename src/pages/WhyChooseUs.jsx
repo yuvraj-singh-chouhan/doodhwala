@@ -9,24 +9,14 @@ const chooseUsData = [
         description: "Completely safe and healthy"
     },
     {
-        image: "/WCU/WCU2.png",
-        title: "Zero Adulteration:",
-        description: "We guarantee absolute purity in every drop."
-    },
-    {
-        image: "/WCU/WCU3.png",
-        title: "Strict Quality Testing:",
-        description: "Every batch is tested in our In-House Lab. Milk is also tested on arrival from local vendors."
-    },
-    {
         image: "/WCU/WCU4.png",
         title: "Eco-Friendly Packaging:",
         description: "Packed safely in reusable glass bottles. 100% plastic-free!"
     },
     {
-        image: "/WCU/WCU5.png",
-        title: "Ultra-Hygienic Cleaning:",
-        description: "Bottles are washed with RO water using Hi-tech machineries."
+        image: "/WCU/WCU2.png",
+        title: "Zero Adulteration:",
+        description: "We guarantee absolute purity in every drop."
     },
     {
         image: "/WCU/WCU6.png",
@@ -34,15 +24,27 @@ const chooseUsData = [
         description: "Freshness locked in from the farm to your fridge."
     },
     {
-        image: "/WCU/WCU7.png",
-        title: "Delivered Fresh To Your Doorstep",
-        description: "Wake up to healthy milk every morning."
+        image: "/WCU/WCU3.png",
+        title: "Strict Quality Testing:",
+        description: "Every batch is tested in our In-House Lab. Milk is also tested on arrival from local vendors."
     },
     {
         image: "/WCU/WCU8.png",
         title: "Supporting Local Farmers:",
         description: "Empowering our farming community with ethical sourcing."
     },
+    {
+        image: "/WCU/WCU5.png",
+        title: "Ultra-Hygienic Cleaning:",
+        description: "Bottles are washed with RO water using Hi-tech machineries."
+    },
+
+    {
+        image: "/WCU/WCU7.png",
+        title: "Delivered Fresh To Your Doorstep",
+        description: "Wake up to healthy milk every morning."
+    },
+
 ];
 
 function FeatureItem({ title, description, image }) {
@@ -97,7 +99,7 @@ function WhyChooseUs() {
                 </div>
 
                 {/* Features Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-20 xl:gap-x-28 gap-y-10 lg:gap-y-12 mx-auto mb-12 px-2 lg:px-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-20 xl:gap-x-28 gap-y-10 lg:gap-y-12 mx-auto mb-2 px-2 lg:px-8 py-7">
                     {chooseUsData.map((item, index) => (
                         <FeatureItem key={index} title={item.title} description={item.description} image={item.image} />
                     ))}

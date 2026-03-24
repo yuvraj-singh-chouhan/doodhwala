@@ -71,7 +71,7 @@ function Home() {
     return (
         <>
             <Hero />
-            <section className="relative w-full overflow-hidden pb-24 pt-10 mb-12">
+            <section className="relative w-full overflow-hidden pb-12 pt-10 mb-1">
                 <div className="container mx-auto px-6 md:px-12 lg:px-[120px] relative z-10">
 
                     {/* Header Section */}

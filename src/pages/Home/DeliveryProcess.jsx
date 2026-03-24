@@ -50,7 +50,7 @@ function DeliveryProcess() {
             </div>
 
             {/* Desktop Circular Layout (hidden on mobile, visible on lg) */}
-            <div className="hidden lg:flex relative w-full max-w-[1100px] mx-auto h-[600px] items-center justify-center mt-6 mb-6 z-10">
+            <div className="hidden lg:flex relative w-full max-w-[1100px] mx-auto h-[600px] items-center justify-center mt-2 mb-2 z-10">
 
 
                 {/* Central Bottles Image */}
@@ -120,7 +120,7 @@ function DeliveryProcess() {
             </div>
 
             {/* Mobile Layout (Visible only under LG breakpoints) */}
-            <div className="flex lg:hidden flex-col gap-2 w-full px-2 mb-6 z-10 max-w-[450px] mx-auto">
+            <div className="flex lg:hidden flex-col gap-2 w-full px-2 mb-2 z-10 max-w-[450px] mx-auto">
                 {DeliveryProcessInfo.map((item, idx) => (
                     <div className="flex items-center gap-2 bg-white p-4 rounded-xl border border-gray-50" key={idx}>
                         <div className="w-[50px] h-[50px] rounded-full flex items-center justify-center flex-shrink-0 relative overflow-hidden">
@@ -137,7 +137,7 @@ function DeliveryProcess() {
             </div>
 
             {/* Final Action Button */}
-            <div className="w-full flex justify-center mt-14 mb-8 relative z-20">
+            <div className="w-full flex justify-center mt-5 mb-8 relative z-20">
                 <Link to="/our-process" className="bg-[#59789E] hover:bg-[#45628A] text-white font-poppins px-8 py-[20px] font-semibold text-lg rounded-full shadow-md transition-all">
                     See Our Complete 6-Step Process
                 </Link>
