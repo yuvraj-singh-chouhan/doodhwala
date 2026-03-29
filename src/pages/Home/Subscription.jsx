@@ -30,18 +30,18 @@ function Subscription() {
 
                     {/* Background Desktop Image (Bottles + Milk Splash) */}
                     <div className="hidden lg:flex flex-col justify-between absolute lg:-bottom-0 right-0 h-[100%] z-0 pointer-events-none justify-end items-end overflow-hidden">
-                        <img src="/common/milk-bottle-full.png" alt="Subscription Milk Details" className="h-[70.5%] md:h-[50%] w-auto object-contain object-right-bottom -mr-[2px]" />
+                        <img src="/common/milk-bottle-full.png" alt="Subscription Milk Details" className="h-[70.5%]  w-auto object-contain object-right-bottom -mr-[2px]" />
                         <img src="/common/floating-milk.png" alt="Floating Milk" className="absolute top-[0%] right-[15%] w-[55%] max-w-[350px] h-auto object-contain z-10" />
                     </div>
 
                     {/* Columns Wrapper */}
-                    <div className="w-full lg:w-[68%] flex flex-col md:flex-row md:align-center md:justify-center gap-3 md:gap-8 lg:gap-16 relative z-10 font-poppins py-4">
+                    <div className="w-full lg:w-[80%] flex flex-col md:flex-row md:align-center md:justify-start justify-center gap-3 md:gap-8 lg:gap-16 relative z-10 font-poppins py-4">
 
                         {/* 1st Column: Features */}
                         <div className="flex text-white flex flex-col md:px-5 md:p-9">
-                            <h2 className="font-poppins text-[30px] font-semibold md:text-[38px] lg:text-[42px] font-bold mb-6 ">Subscription Features:</h2>
+                            <h2 className="font-poppins text-[26px] font-semibold md:text-[34px] lg:text-[38px] font-bold mb-6 ">Subscription Features:</h2>
 
-                            <ul className="space-y-[18px] font-semibold">
+                            <ul className="space-y-[8px]">
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
                                     <p className="font-poppins text-[16px] md:text-[18px] leading-snug">1 Litre Glass Bottle System</p>
@@ -66,7 +66,9 @@ function Subscription() {
 
                             <div className="hidden md:block mt-10 lg:mt-12">
                                 <Link to={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}`} target="_blank">
-                                    <button className="bg-white text-brand-blue font-poppins font-bold text-[15px] md:text-[16px] px-8 py-[14px] rounded-full shadow-sm hover:bg-[#EEF1F6] hover:scale-105 transition-all">
+                                    <button className="bg-white text-brand-blue font-poppins font-bold text-[15px] md:text-[16px] px-8 py-[14px] rounded-full shadow-sm hover:bg-[#EEF1F6] hover:scale-105 1 Litre Glass Bottle System
+
+transition-all">
                                         Start Your Subscription
                                     </button>
                                 </Link>
@@ -74,10 +76,10 @@ function Subscription() {
                         </div>
 
                         {/* 2nd Column: Delivery Slots */}
-                        <div className="flex-1 text-white flex flex-col lg:pr-10 mt-3 md:mt-0 md:p-9">
-                            <h2 className="font-poppins text-[30px] font-semibold md:text-[38px] lg:text-[42px] font-bold mb-6">Flexible Delivery Slots:</h2>
+                        <div className="flex text-white flex flex-col lg:pr-10 mt-3 md:mt-0 md:py-9">
+                            <h2 className="font-poppins text-[26px] font-semibold md:text-[34px] lg:text-[38px] font-bold mb-6">Flexible Delivery Slots:</h2>
 
-                            <ul className="space-y-[18px] font-semibold">
+                            <ul className="space-y-[8px]">
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
                                     <p className="font-poppins text-[16px] md:text-[18px]  leading-snug">6:00 AM – 8:00 AM</p>
