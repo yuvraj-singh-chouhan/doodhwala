@@ -12,7 +12,7 @@ function Subscription() {
             <div className="bg-brand-blue md:bg-transparent w-[100%] md:w-[80%] md:pt-24 mx-auto px-8 md:px-12 lg:px-[100px] relative z-20">
 
                 {/* Mobile Floating Milk Image */}
-                <div className="lg:hidden flex justify-center w-[100%] mx-auto relative z-0 -mt-8 md:-mt-12 pointer-events-none">
+                <div className="md:hidden flex justify-center w-[100%] mx-auto relative z-0 -mt-8 md:-mt-12 pointer-events-none">
                     <img src="/common/floating-milk.png" alt="Floating Milk" className="w-[85%] max-w-[280px] h-auto object-contain" />
                 </div>
                 {/* Header Section */}
@@ -26,11 +26,11 @@ function Subscription() {
                 </div>
 
                 {/* Subscription Blue Box */}
-                <div className="md:bg-brand-blue rounded-[24px] relative md:shadow-md flex flex-col lg:flex-row lg:min-h-[456px] overflow-hidden md:px-24 ">
+                <div className="md:bg-brand-blue rounded-[24px] relative md:shadow-md flex flex-col lg:flex-row lg:min-h-[456px] overflow-hidden md:px-12 ">
 
                     {/* Background Desktop Image (Bottles + Milk Splash) */}
                     <div className="hidden lg:flex flex-col justify-between absolute lg:-bottom-0 right-0 h-[100%] z-0 pointer-events-none justify-end items-end overflow-hidden">
-                        <img src="/common/milk-bottle-full.png" alt="Subscription Milk Details" className="h-[70.5%] w-auto object-contain object-right-bottom -mr-[2px]" />
+                        <img src="/common/milk-bottle-full.png" alt="Subscription Milk Details" className="h-[70.5%] md:h-[50%] w-auto object-contain object-right-bottom -mr-[2px]" />
                         <img src="/common/floating-milk.png" alt="Floating Milk" className="absolute top-[0%] right-[15%] w-[55%] max-w-[350px] h-auto object-contain z-10" />
                     </div>
 
