@@ -7,7 +7,7 @@ function Navbar() {
 
     return (
         <header className="sticky top-0 left-0 w-full z-[100] bg-white shadow-sm transition-all duration-300">
-            <nav className="container mx-auto px-6 md:px-24 py-4 font-poppins flex items-center justify-between relative">
+            <nav className="container mx-auto px-6 md:px-24 py-1 font-poppins flex items-center justify-between relative">
                 {/* Mobile Hamburger Menu */}
                 <button
                     onClick={() => setIsMenuOpen(true)}
@@ -18,11 +18,11 @@ function Navbar() {
 
                 {/* Logo */}
                 <Link to="/" className="hidden md:flex items-center">
-                    <img src="/logo.png" alt="BTech Doodhwala" className="h-20 md:h-24" />
+                    <img src="/logo.png" alt="BTech Doodhwala" className="h-20 md:h-20 lg:h-22" />
                 </Link>
 
                 {/* Desktop Links */}
-                <div className="hidden md:flex space-x-6 lg:space-x-12 font-bold text-lg tracking-wide">
+                <div className="hidden md:flex space-x-6 lg:space-x-12 font-bold md:text-[14px] lg:text-[16px] tracking-wide">
                     <Link to="/why-choose-us" className="hover:text-brand-blue transition-colors">Why Choose Us</Link>
                     <Link to="/our-process" className="hover:text-brand-blue transition-colors">Our Process</Link>
                     {/* <Link to="/" className="hover:text-brand-blue transition-colors">Subscription</Link>
@@ -30,14 +30,14 @@ function Navbar() {
                 </div>
 
                 {/* Desktop WhatsApp Button */}
-                <a href={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center gap-2 md:px-5 px-3 py-3 border-[1.5px] border-brand-dark-blue rounded-full font-bold text-lg hover:bg-[#5774a0] hover:text-white transition-all">
+                <a href={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center gap-2 md:px-5 px-3 lg:py-3 md:py-2 border-[1.5px] border-brand-dark-blue rounded-full font-bold md:text-[14px] lg:text-[16px] hover:bg-[#5774a0] hover:text-white transition-all">
                     <FaWhatsapp className="text-lg" />
                     <span className="">Message on WhatsApp</span>
                 </a>
 
                 {/* Mobile WhatsApp Button */}
                 <a href={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer" className="md:hidden flex items-center justify-center w-[55px] h-[55px] rounded-full border border-gray-400 text-gray-700 hover:bg-gray-100 transition-colors flex-shrink-0">
-                    <FaWhatsapp className="text-[26px]" />
+                    <FaWhatsapp className="text-[22px]" />
                 </a>
 
                 {/* Mobile Menu Backdrop */}
