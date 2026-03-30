@@ -9,7 +9,7 @@ function Subscription() {
 
 
             {/* Main Content Container */}
-            <div className="bg-brand-blue md:bg-transparent w-[100%] md:w-[80%] md:pt-24 mx-auto px-8 md:px-12 lg:px-[100px] relative z-20">
+            <div className="bg-brand-blue md:bg-transparent w-[100%] md:w-[100%] md:pt-24 mx-auto px-8 md:px-12 lg:px-[100px] relative z-20">
 
                 {/* Mobile Floating Milk Image */}
                 <div className="md:hidden flex justify-center w-[100%] mx-auto relative z-0 -mt-8 md:-mt-12 pointer-events-none">
@@ -30,7 +30,7 @@ function Subscription() {
 
                     {/* Background Desktop Image (Bottles + Milk Splash) */}
                     <div className="hidden lg:flex flex-col justify-between absolute lg:-bottom-0 right-0 h-[100%] z-0 pointer-events-none justify-end items-end overflow-hidden">
-                        <img src="/common/milk-bottle-full.png" alt="Subscription Milk Details" className="h-[70.5%]  w-auto object-contain object-right-bottom -mr-[2px]" />
+                        <img src="/common/milk-bottle-full.png" alt="Subscription Milk Details" className="h-[60.5%] 2xl:h-[70.5%] w-auto object-contain object-right-bottom -mr-[2px]" />
                         <img src="/common/floating-milk.png" alt="Floating Milk" className="absolute top-[0%] right-[15%] w-[55%] max-w-[350px] h-auto object-contain z-10" />
                     </div>
 
@@ -39,28 +39,28 @@ function Subscription() {
 
                         {/* 1st Column: Features */}
                         <div className="flex text-white flex flex-col md:px-5 md:p-9">
-                            <h2 className="font-poppins text-[26px] font-semibold md:text-[34px] lg:text-[38px] font-bold mb-6 ">Subscription Features:</h2>
+                            <h2 className="font-poppins text-[18px] font-semibold md:text-[20px] lg:text-[22px] font-bold mb-6 ">Subscription Features:</h2>
 
                             <ul className="space-y-[8px]">
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[16px] md:text-[18px] leading-snug">1 Litre Glass Bottle System</p>
+                                    <p className="font-poppins text-[16px] md:text-[14px] leading-snug">1 Litre Glass Bottle System</p>
                                 </li>
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[16px] md:text-[18px] leading-snug">Custom Delivery Options</p>
+                                    <p className="font-poppins text-[16px] md:text-[14px] leading-snug">Custom Delivery Options</p>
                                 </li>
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[16px] md:text-[18px] leading-snug">Easy Online Modifications as<br className="hidden md:block" /> per needs (Via WhatsApp)</p>
+                                    <p className="font-poppins text-[16px] md:text-[14px] leading-snug">Easy Online Modifications as<br className="hidden md:block" /> per needs (Via WhatsApp)</p>
                                 </li>
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[16px] md:text-[18px] leading-snug">Browse Transactional History<br className="hidden md:block" /> 24/7 (Via WhatsApp Support)</p>
+                                    <p className="font-poppins text-[16px] md:text-[14px] leading-snug">Browse Transactional History<br className="hidden md:block" /> 24/7 (Via WhatsApp Support)</p>
                                 </li>
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[16px] md:text-[18px] leading-snug">Pay Online 24/7 (UPI/Direct Transfer)</p>
+                                    <p className="font-poppins text-[16px] md:text-[14px] leading-snug">Pay Online 24/7 (UPI/Direct Transfer)</p>
                                 </li>
                             </ul>
 
@@ -76,26 +76,26 @@ transition-all">
                         </div>
 
                         {/* 2nd Column: Delivery Slots */}
-                        <div className="flex text-white flex flex-col lg:pr-10 mt-3 md:mt-0 md:py-9">
-                            <h2 className="font-poppins text-[26px] font-semibold md:text-[34px] lg:text-[38px] font-bold mb-6">Flexible Delivery Slots:</h2>
+                        <div className="flex text-white flex-col lg:pr-10 mt-3 md:mt-0 md:py-9">
+                            <h2 className="font-poppins text-[18px] font-semibold md:text-[20px] lg:text-[22px] xl:text-[24px]  mb-6">Flexible Delivery Slots:</h2>
 
                             <ul className="space-y-[8px]">
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[16px] md:text-[18px]  leading-snug">6:00 AM – 8:00 AM</p>
+                                    <p className="font-poppins text-[12px] md:text-[14px]  leading-snug">6:00 AM – 8:00 AM</p>
                                 </li>
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[16px] md:text-[18px] leading-snug">8:00 AM – 10:00 AM</p>
+                                    <p className="font-poppins text-[12px] md:text-[14px] leading-snug">8:00 AM – 10:00 AM</p>
                                 </li>
                                 <li className="flex items-start gap-[14px]">
                                     <span className="w-[6px] h-[6px] rounded-full bg-white mt-[10px] flex-shrink-0"></span>
-                                    <p className="font-poppins text-[16px] md:text-[18px]  leading-snug">Anytime During The Day</p>
+                                    <p className="font-poppins text-[12px] md:text-[14px]  leading-snug">Anytime During The Day</p>
                                 </li>
                             </ul>
 
                             <div className="mt-8 lg:mt-12 max-w-[280px]">
-                                <p className="font-poppins text-[15px] md:text-[16px] leading-relaxed">
+                                <p className="font-poppins text-[13px] md:text-[14px] leading-relaxed">
                                     <span className="font-bold">Note:</span> Order till 10:00 PM for next morning delivery.
                                 </p>
                             </div>
