@@ -62,12 +62,12 @@ const ContactUs = () => {
                                     <p className="text-green-500 text-[12px] md:text-[12px] font-semibold tracking-wide">Preferred for Instant Response</p>
                                 </div>
                             </div>
-                            <p className="text-[#333333] font-semibold text-[20px] mb-6 tracking-wide text-center md:text-left w-full ml-12">+91 {import.meta.env.VITE_WHATSAPP_NUMBER}</p>
+                            <p className="text-[#333333] font-semibold text-[20px] mb-6 tracking-wide text-center md:text-left w-full md:ml-12">+91 {import.meta.env.VITE_WHATSAPP_NUMBER}</p>
                             <a
                                 href={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER || '917980089284'}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-full md:w-auto bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 md:py-3 px-8 rounded-full flex justify-center items-center gap-2 transition-all shadow-sm text-[15px] ml-12"
+                                className="w-full md:w-auto bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 md:py-3 px-8 rounded-full flex justify-center items-center gap-2 transition-all shadow-sm text-[15px] md:ml-12"
                             >
                                 <FaWhatsapp className="text-[20px]" />
                                 Chat on WhatsApp
