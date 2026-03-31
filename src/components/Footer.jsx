@@ -46,6 +46,7 @@ function Footer() {
                             <li><Link to="/subscription" className="text-[16px] text-gray-700 hover:text-gray-900 transition-colors font-medium">Subscription</Link></li>
                             <li><Link to="/terms-and-conditions" className="text-[16px] text-gray-700 hover:text-gray-900 transition-colors font-medium">Terms & Conditions</Link></li>
                             <li><Link to="/privacy-policy" className="text-[16px] text-gray-700 hover:text-gray-900 transition-colors font-medium">Privacy Policy</Link></li>
+                            <li><Link to="/contact-us" className="text-[16px] text-gray-700 hover:text-gray-900 transition-colors font-medium">Contact Us</Link></li>
                         </ul>
                     </div>
 

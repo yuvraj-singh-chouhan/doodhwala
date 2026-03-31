@@ -25,8 +25,8 @@ function Navbar() {
                 <div className="hidden md:flex space-x-6 lg:space-x-12 font-bold md:text-[14px] lg:text-[16px] tracking-wide">
                     <Link to="/why-choose-us" className="hover:text-brand-blue transition-colors">Why Choose Us</Link>
                     <Link to="/our-process" className="hover:text-brand-blue transition-colors">Our Process</Link>
-                    {/* <Link to="/" className="hover:text-brand-blue transition-colors">Subscription</Link>
-                    <Link to="/" className="hover:text-brand-blue transition-colors">Contact</Link> */}
+                    {/* <Link to="/" className="hover:text-brand-blue transition-colors">Subscription</Link> */}
+                    <Link to="/contact-us" className="hover:text-brand-blue transition-colors">Contact</Link>
                 </div>
 
                 {/* Desktop WhatsApp Button */}
@@ -68,8 +68,8 @@ function Navbar() {
                     <div className="flex flex-col pt-8 px-8 gap-8 font-bold text-[18px] text-[#494949]">
                         <Link to="/why-choose-us" onClick={() => setIsMenuOpen(false)} className="hover:text-brand-blue transition-colors">Why Choose Us</Link>
                         <Link to="/our-process" onClick={() => setIsMenuOpen(false)} className="hover:text-brand-blue transition-colors">Our Process</Link>
-                        {/* <Link to="/" onClick={() => setIsMenuOpen(false)} className="hover:text-brand-blue transition-colors">Subscription</Link>
-                        <Link to="/" onClick={() => setIsMenuOpen(false)} className="hover:text-brand-blue transition-colors">Contact</Link> */}
+                        {/* <Link to="/" onClick={() => setIsMenuOpen(false)} className="hover:text-brand-blue transition-colors">Subscription</Link> */}
+                        <Link to="/contact-us" onClick={() => setIsMenuOpen(false)} className="hover:text-brand-blue transition-colors">Contact</Link>
                     </div>
 
                     {/* Mobile Menu Footer Support Button */}
