@@ -62,7 +62,7 @@ const ContactUs = () => {
                                     <p className="text-green-500 text-[12px] md:text-[12px] font-semibold tracking-wide">Preferred for Instant Response</p>
                                 </div>
                             </div>
-                            <p className="text-[#333333] font-semibold text-[20px] mb-6 tracking-wide text-center md:text-left w-full ml-12">+91 7980089284</p>
+                            <p className="text-[#333333] font-semibold text-[20px] mb-6 tracking-wide text-center md:text-left w-full ml-12">+91 {import.meta.env.VITE_WHATSAPP_NUMBER}</p>
                             <a
                                 href={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER || '917980089284'}`}
                                 target="_blank"
